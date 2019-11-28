@@ -1,7 +1,7 @@
 name: type_resolver
 description: >
   TypeResolver provides Type and String with the ability to ultimately resolve to an instance or Type.version: 1.0.0
-homepage: https://www.example.com
+homepage: https://github.com/dart-ecosystem/type_resolver.dart
 author: Copydog <775150@qq.com>
 
 environment:
