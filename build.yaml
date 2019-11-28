@@ -1,0 +1,22 @@
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+targets:
+  $default:
+    builders:
+      typeResolver|typeResolverCollector:
+        enabled: true
+      typeResolver|typeResolverCombiner:
+        enabled: true
+builders:
+  typeResolver|typeResolverCollector:
+    import: 'package:type_resolver/src/builder/builder.dart'
+    builder_factories: ['typeResolverCollector']
+    build_extensions: { '.dart': ['.type_resolver.json'] }
+    auto_apply: root_package
+    build_to: cache
+  typeResolver|typeResolverCombiner:
+    import: 'package:type_resolver/src/builder/builder.dart'
+    builder_factories: ['typeResolverCombiner']
+    build_extensions: { 'main.dart': ['/generated/type_resolver.dart'] }
+    auto_apply: root_package
+    build_to: source
+    required_inputs: [".type_resolver.json"]
