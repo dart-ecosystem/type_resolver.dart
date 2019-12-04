@@ -1,4 +1,4 @@
-library typeResolver;
+library type_resolver;
 
-export 'src/annotation/type_resolvable.dart';
-export 'src/runtime/type_resolver.dart';
+export 'package:type_resolver/src/annotation/type_resolvable.dart';
+export 'package:type_resolver/src/runtime/type_resolver.dart';

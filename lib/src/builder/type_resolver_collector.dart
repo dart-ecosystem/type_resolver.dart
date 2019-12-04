@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
+import 'package:source_gen/source_gen.dart';
 import 'package:type_resolver/src/annotation/type_resolvable.dart';
 import 'package:type_resolver/src/builder/cache/type_resolver_cache.dart';
 import 'package:type_resolver/src/builder/util/class_element_constructor_utils.dart';
 import 'package:type_resolver/src/builder/util/type_utils.dart';
-import 'package:source_gen/source_gen.dart';
 
 class TypeResolverCollector extends Builder {
   static TypeChecker typeChecker = TypeChecker.fromRuntime(TypeResolvable);
